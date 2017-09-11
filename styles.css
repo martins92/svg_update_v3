@@ -1,3 +1,9 @@
+/*
+================================================================================
+**********************             BASE styling           **********************
+================================================================================
+*/
+
 body {
   margin: 0;
   padding: 0;
@@ -5,7 +11,7 @@ body {
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
   color: #111;
-  background: url('images/background.png') #edeff0;
+  background: url('svgs/background.svg') #edeff0;
 }
 
 #container {
@@ -25,9 +31,6 @@ a {
   text-decoration: none;
   color: #39add1;
   font-weight: 700;
-  }
-  a:hover {
-    color: #111;
   }
 
 header {
@@ -79,4 +82,123 @@ footer {
   margin-top: 100px;
   padding-bottom: 30px;
   color: #ba8058;
+}
+
+.h1_hidden {
+  display: none;
+  color: #BA8058;
+  font-size: 3em;
+}
+
+/*
+================================================================================
+**********************             SVG styling            **********************
+================================================================================
+*/
+
+/*Navigation item hover styles*/
+
+.nav_icons li a,
+.nav_icons li .st0{
+  transition: .5s;
+  fill: #39add1;
+}
+
+.nav_icons li:hover a,
+.nav_icons li:hover .st0 {
+  fill: #BA8058;
+  color: #111;
+  transform: rotateX(1turn);
+}
+
+.logo {
+  width: 140px;
+  height: 120px;
+}
+
+.dog_svg li svg {
+  width: 170px;
+  height: 170px;
+}
+
+/*
+================================================================================
+********************** Change the color of the dogs' coats *********************
+================================================================================
+*/
+
+/*RED*/
+
+.red .st0 {
+  fill:#e9b928;
+}
+.red .st1 {
+  fill:#FBFEFF;
+}
+.red .st2 {
+  fill:#2D3339;
+}
+.red .st3 {
+  fill:#ad8304;
+}
+
+/*FAWN*/
+
+.fawn .st0 {
+  fill:#f75936;
+}
+.fawn .st1 {
+  fill:#FBFEFF;
+}
+.fawn .st2 {
+  fill:#2D3339;
+}
+.fawn .st3 {
+  fill:#a32205;
+}
+
+/*SABLE*/
+
+.sable .st0 {
+  fill:#595653;
+}
+.sable .st1 {
+  fill:#FBFEFF;
+}
+.sable .st2 {
+  fill:#2D3339;
+}
+.sable .st3 {
+  fill:#f4eae4;
+}
+
+/*BLACK AND TAN*/
+
+.blac_and_tan .st0 {
+  fill:#9c4305;
+}
+.blac_and_tan .st1 {
+  fill:#9c4305;
+}
+.blac_and_tan .st2 {
+  fill:#b87f58;
+}
+.blac_and_tan .st3 {
+  fill:#2f1401;
+}
+
+/*
+================================================================================
+**********************             MEDIA query            **********************
+================================================================================
+*/
+
+@media (max-width: 425px) {
+  .text {
+    visibility: hidden;
+  }
+
+  .h1_hidden {
+    display: block;
+  }
 }
